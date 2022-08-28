@@ -1,6 +1,8 @@
-- name: Home
+- name: Informacje
   link: /
-- name: About
-  link: /about/
-- name: Portfolio
-  link: /portfolio/
+- name: Kalendarz
+  link: /kalendarz/
+- name: Rywalizacja Zastępów
+  link: rywalizacja
+- name: Kontakt
+  link: /kontakt/
