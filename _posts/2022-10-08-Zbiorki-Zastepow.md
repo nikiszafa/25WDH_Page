@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Zbiorki zastepow
+categories: zbiorki
 ---
 
 Sobota czyli zbiórki zastępów. Orły i puchacze budują szałasy w lesie 

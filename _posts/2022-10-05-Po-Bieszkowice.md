@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Po biwaku w Bieszkowicach
+categories: biwaki
+
 ---
 
 Zaczynamy nasz biwak w Bieszkowicach. Będzie to czas pełen wielu przygód. 

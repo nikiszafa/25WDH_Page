@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Biwak Bieszkowice Informacje 23.09 - 25.09
+categories: biwaki
 ---
 - Biblioteka i Centrum Kultury, ul.Szkolna 4, 84-206 Bieszkowice
 - Koszt 100zł, proszę zabrać w gotówce na biwak.

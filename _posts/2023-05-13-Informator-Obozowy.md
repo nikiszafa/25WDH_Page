@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Informator obozowy
+categories: oboz
 ---
 ### Termin obozu: 1-21.07.2023 r.
 

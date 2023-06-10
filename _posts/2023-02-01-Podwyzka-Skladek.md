@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Podwyżka składek członkowskich z 20zł na 27zł na 2023 r.
+categories: informacje
 ---
 
 Czuwaj!
