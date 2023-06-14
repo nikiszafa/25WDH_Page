@@ -3,9 +3,12 @@ layout: page
 title: Dokumenty
 permalink: /dokumenty/
 ---
-### Zgoda na przynależność do drużyny : <a href="https://25wdh.zhr.pl/pliki/zgodanaprzynależność.pdf">Pobierz</a>
+### Zgoda na przynależność do drużyny : 
+{% pdf "/pliki/zgodanaprzynależność.pdf" no_link%}
 
 
 ***
-### Sprawności : <a href="https://25wdh.zhr.pl/pliki/sprawnosci2020.pdf">Pobierz</a>
+### Sprawności : 
+{% pdf "/pliki/sprawnosci2020.pdf" no_link%}
+
 

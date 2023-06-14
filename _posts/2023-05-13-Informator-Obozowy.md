@@ -111,7 +111,9 @@ Komendanci - preferowany kontakt mailowy
 - Bartłomiej Surowski 502 601 307 bartek.surowski@zhr.pl 17-21.07.2023
 
 ### DOKUMENTY DO POBRANIA: 
-### <a href="https://25wdh.zhr.pl/pliki/kartaoboz.pdf">Karta na obóz</a>
+
 ### <a href="https://25wdh.zhr.pl/pliki/danefaktura.docx">Dane do faktury</a>
+### KARTA KWALIFIKACYJNA:
+ {% pdf "/pliki/kartaoboz.pdf" no_link%}
 
 
