@@ -61,8 +61,14 @@ footer-links:
   rss: # just type anything here for a working RSS icon
   twitter: 
 
+maps:
+  google:
+    api_key: AIzaSyDwUqfZWf0XqX66_XMRn8veEV0zeyTdNiM
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-pdf-embed
+  - jekyll-maps
+  - jekyll-leaflet

@@ -1,4 +1,49 @@
-<script type='text/javascript'>
+<!DOCTYPE html>
+<html lang="en-us" class="h-100">
+  <head>
+    <title>
+      Informator obozowy część druga – 25 WDH SPARTANIE – Strona 25 Wejherowskiej Drużyny Harcerzy "Spartanie" im. hm. Pawła Szefki należącej do Związku Harcerstwa Rzeczypospolitej.
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The page supports both dark and light color schemes, and the page author prefers / default is light. -->
+    <meta name="color-scheme" content="dark light" />
+    <!-- Stylesheet that includes Bootstrap dark mode & custom stylesheet -->
+    <link
+      rel="stylesheet"
+      href="/assets/css/styles.css"
+    />
+    <link rel="icon" href="/assets/images/favicon.ico" />
+    <!-- Meta Theme Color is also supported on Safari and Chrome -->
+    <meta
+      name="theme-color"
+      content="#eeeeee"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#111111"
+      media="(prefers-color-scheme: light)"
+    />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Informator obozowy część druga | 25 WDH SPARTANIE</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Informator obozowy część druga" />
+<meta name="author" content="25wdhspartanie" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Szanowni Państwo!" />
+<meta property="og:description" content="Szanowni Państwo!" />
+<link rel="canonical" href="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/" />
+<meta property="og:url" content="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/" />
+<meta property="og:site_name" content="25 WDH SPARTANIE" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-15T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Informator obozowy część druga" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"25wdhspartanie"},"dateModified":"2023-06-15T00:00:00+02:00","datePublished":"2023-06-15T00:00:00+02:00","description":"Szanowni Państwo!","headline":"Informator obozowy część druga","mainEntityOfPage":{"@type":"WebPage","@id":"25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"25wdh.zhr.pl/assets/images/25logo.png"},"name":"25wdhspartanie"},"url":"25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/"}</script>
+<!-- End Jekyll SEO tag -->
+ <link type="application/atom+xml" rel="alternate" href="25wdh.zhr.pl/feed.xml" title="25 WDH SPARTANIE" /><script type='text/javascript'>
   /* global google */
 /* global MarkerClusterer */
 // eslint-disable-next-line no-unused-vars
@@ -164,173 +209,67 @@ if (typeof Object.assign !== 'function') {
 }
 
 </script>
-<script type='text/javascript'>
-  /* global google */
-/* global MarkerClusterer */
-// eslint-disable-next-line no-unused-vars
-var jekyllMaps = (function() {
-  'use strict'
-  var clusterSettings = {}
-  var clusterReady = false
-  var mapReady = false
-  var options = {}
-  var data = []
-  var maps = []
-
-  return {
-    initializeMap: initializeMap,
-    initializeCluster: initializeCluster,
-    register: register
-  }
-
-  /**
-   * Setup Google Maps options and call renderer.
-   */
-  function initializeMap() {
-    options = {
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: new google.maps.LatLng(0, 0),
-      styles: []
-    }
-    mapReady = true
-    render()
-  }
-
-  /**
-   * Register map data to be rendered once Google Maps API is loaded.
-   *
-   * @param string id
-   * @param Array locations
-   * @param Object settings
-   */
-  function register(id, locations, options) {
-    data.push({ id: id, locations: locations, options: options })
-    render()
-  }
-
-  /**
-   * Render maps data if Google Maps API is loaded.
-   */
-  function render() {
-    if (!mapReady) return
-
-    while (data.length > 0) {
-      var item = data.pop()
-      var bounds = new google.maps.LatLngBounds()
-      var mapOptions = Object.assign({}, options, item.options)
-      var map = new google.maps.Map(
-        document.getElementById(item.id),
-        mapOptions
-      )
-      var infoWindow = new google.maps.InfoWindow()
-      var markers = item.locations.map(createMarker)
-
-      map.fitBounds(bounds)
-      google.maps.event.addListenerOnce(map, 'idle', function() {
-        if (this.customZoom) this.setZoom(this.customZoom)
-      })
-      if (mapOptions.useCluster) {
-        maps.push({ map: map, markers: markers })
-        processCluster()
-      }
-    }
-
-    function createMarker(location) {
-      var position = new google.maps.LatLng(
-        location.latitude,
-        location.longitude
-      )
-      bounds.extend(position)
-      if (!mapOptions.showMarker) return false
-
-      var marker = new google.maps.Marker({
-        position: position,
-        title: location.title,
-        image: location.image,
-        popup_html: location.popup_html,
-        icon: location.icon || mapOptions.markerIcon,
-        url: markerUrl(mapOptions.baseUrl, location.url),
-        url_text: location.url_text,
-        map: map
-      })
-      if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
-
-      return marker
-    }
-
-    function markerUrl(baseUrl, url) {
-      if (/^(https?|\/\/)/.test(url)) return url
-
-      return url.length > 0 ? baseUrl + url : ''
-    }
-
-    function markerPopup() {
-      var content = '<div class="map-info-window"><h5>' + this.title + '</h5>'
-      if (this.popup_html.length > 0) {
-        content += this.popup_html
-      }
-      else {
-        var imageTag =
-          this.image.length > 0 &&
-          '<img src="' + this.image + '" alt="' + this.title + '"/>'
-        if (this.url.length > 0) {
-          var linkContent = imageTag || this.url_text || 'View'
-          content += '<a href="' + this.url + '">' + linkContent + '</a>'
-        } else if (imageTag) {
-          content += imageTag
-        }
-      }
-      content += '</div>'
-      infoWindow.setContent(content)
-      infoWindow.open(map, this)
-    }
-  }
-
-  function initializeCluster(settings) {
-    clusterReady = true
-    clusterSettings = settings || {}
-    processCluster()
-  }
-
-  function processCluster() {
-    if (!clusterReady) return
-
-    while (maps.length > 0) {
-      var obj = maps.pop()
-      // eslint-disable-next-line no-new
-      new MarkerClusterer(obj.map, obj.markers, {
-        gridSize: clusterSettings.grid_size || 25,
-        imagePath:
-          'https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m'
-      })
-    }
-  }
-})()
-/* Object.assign polyfill */
-if (typeof Object.assign !== 'function') {
-  Object.assign = function(target) {
-    'use strict'
-    if (target == null) {
-      throw new TypeError('Cannot convert undefined or null to object')
-    }
-
-    target = Object(target)
-    for (var index = 1; index < arguments.length; index++) {
-      var source = arguments[index]
-      if (source != null) {
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key]
-          }
-        }
-      }
-    }
-    return target
-  }
-}
-
-</script>
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="25wdh.zhr.pl/feed.xml" rel="self" type="application/atom+xml" /><link href="25wdh.zhr.pl/" rel="alternate" type="text/html" /><updated>2023-06-16T00:23:03+02:00</updated><id>25wdh.zhr.pl/feed.xml</id><title type="html">25 WDH SPARTANIE</title><subtitle>Strona 25 Wejherowskiej Drużyny Harcerzy &quot;Spartanie&quot; im. hm. Pawła Szefki należącej do Związku Harcerstwa Rzeczypospolitej.</subtitle><author><name>25wdhspartanie</name></author><entry><title type="html">Informator obozowy część druga</title><link href="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/" rel="alternate" type="text/html" title="Informator obozowy część druga" /><published>2023-06-15T00:00:00+02:00</published><updated>2023-06-15T00:00:00+02:00</updated><id>25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga</id><content type="html" xml:base="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/"><![CDATA[<p>Szanowni Państwo!</p>
+</head>
+  <body class="d-flex flex-column h-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand p-0" href="/">
+    
+    <img src="/assets/images/25logo.png" alt="light avatar" width="30" class="d-inline-block align-top m-0 light-avatar">
+    <img src="/assets/images/25logo.png" alt="dark avatar" width="30" class="d-inline-block align-top m-0 dark-avatar">
+    
+      25 WDH SPARTANIE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        
+          <li class="nav-item">
+            <a href="/"  class="nav-link" >Informacje</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/kalendarz/"  class="nav-link" >Kalendarz</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/rywalizacja"  class="nav-link" >Rywalizacja Zastępów</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/kapitulastopni"  class="nav-link" >Kapituła stopni</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/dokumenty"  class="nav-link" >Dokumenty</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/umundurowanie"  class="nav-link" >Umundurowanie</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/piosenki"  class="nav-link" >Śpiewnik</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/referencje/"  class="nav-link" >Referencje</a>
+          </li>
+        
+          <li class="nav-item">
+            <a href="/kontakt/"  class="nav-link" >Kontakt</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+      <div class="body"><div class="post">
+  <h1>Informator obozowy część druga</h1>
+  <span class="fs-4 text-muted">2023-06-15</span>
+  <div class="mt-4"><p>Szanowni Państwo!</p>
 
 <p>Proszę się zapoznać z informacjami:</p>
 
@@ -2538,206 +2477,106 @@ Drużynowy <br />
 pwd. Nikodem Wrosz HR <br />
 Związek Harcerstwa Rzeczypospolitej <br />
 25 Wejherowska Drużyna Harcerzy "Spartanie" im. hm. Pawła Szefki
-</strong></center>]]></content><author><name>25wdhspartanie</name></author><category term="oboz" /><summary type="html"><![CDATA[Szanowni Państwo!]]></summary></entry><entry><title type="html">Informator obozowy</title><link href="25wdh.zhr.pl/oboz/Informator-Obozowy/" rel="alternate" type="text/html" title="Informator obozowy" /><published>2023-05-13T00:00:00+02:00</published><updated>2023-05-13T00:00:00+02:00</updated><id>25wdh.zhr.pl/oboz/Informator-Obozowy</id><content type="html" xml:base="25wdh.zhr.pl/oboz/Informator-Obozowy/"><![CDATA[<h3 id="termin-obozu-1-21072023-r">Termin obozu: 1-21.07.2023 r.</h3>
+</strong></center>
+</div>
+</div>
+</div>
+    </div>
+    <footer class="footer mt-auto py-3">
+  <div class="container footer-container">
+<a class="footer-icon-links" href="mailto:25wdh@zhr.pl">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    class="bi bi-envelope-fill footer-icons"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+    />
+  </svg>
+</a>
+   
+<a
+  class="footer-icon-links"
+  href="https://www.facebook.com/25wdh"
+  ><svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    class="bi bi-facebook footer-icons"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+    /></svg
+></a>
+   
+</div>
+</footer>
 
-<h3 id="miejsce-obozu">Miejsce obozu:</h3>
-<p>Tegoroczna akcja letnia odbędzie się nad jeziorem Lubicko Wielkie (naprzeciwko
-jeziora Brody) w woj. zachodniopomorskim przy miejscowości Strzeszyn
-niedaleko Łubowa. <br /> 
-Będziemy spać w namiotach zastępami. <br />
-W zgrupowaniu wezmą udział:</p>
-<ul>
-  <li>25 Wejherowska Drużyna Harcerzy “Spartanie”</li>
-  <li>14 Wrocławska Drużyna Harcerek “Uroczysko”</li>
-  <li>41 Wrocławska Drużyna Harcerek “Tęcza”</li>
-  <li>14 Wrocławska Drużyna Harcerzy “Bukowina”</li>
-  <li>99 Wrocławska Drużyna Harcerzy “Wawer”</li>
-  <li>25 Wrocławska Żeglarska Drużyna Harcerzy “Parasol”</li>
-</ul>
+    <!-- JS for Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+            <script async defer>
 
-<h3 id="transport">Transport:</h3>
-<p>Na miejsce obozu jedziemy pociągiem. Dokładne terminy zbiórek na wyjazd i powrót zostaną podane w późniejszym terminie.</p>
-<h3 id="odpłatność">Odpłatność:</h3>
-<p>Koszt to 1500 zł
-<b><u> Wykonujemy przelewy na dwa konta, 1400zł na konto obozowe i 100zł na konto naszej drużyny. </u></b><br />
-1400 zł na konto obozowe przelewem w następujących terminach:<br />
-I rata - 1000 zł - do 31.05<br />
-II rata - 400 zł - do 15.06<br />
-100 zł na konto naszej drużyny wpłacamy do 31.05<br />
-Można również dokonywać wpłat od razu pełnej kwoty.<br /></p>
 
-<h4 id="dane-do-przelewu-na-konto-obozowe">Dane do przelewu na konto obozowe:</h4>
-<ul>
-  <li>Tutaj wpłacamy 1400zł <br />
-Odbiorca: Związek Harcerstwa Rzeczypospolitej Okręg Dolnośląski<br />
-Tytuł: Składka programowa Imię Nazwisko Obóz Strzeszyn 2023<br />
-Nr konta: 38 1020 1026 0000 1102 0580 9431<br /></li>
-</ul>
+            // Load maps only when DOM is loaded
+            document.addEventListener("DOMContentLoaded", function() {
+                if (window.google && window.google.maps && jekyllMaps) {
+                  // Maps script already loaded -> Execute callback method
+                  jekyllMaps.initializeMap();
+                } else if (!('IntersectionObserver' in window) ||
+                !('IntersectionObserverEntry' in window) ||
+                !('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+                  // Intersection Observer -> Backup solution : load maps now
+                  lazyLoadGoogleMap();
+                } else {
+                  // Google Maps not loaded & Intersection Observer working -> Enable it
+                  enableMapsObserver();
+                }
+            });
 
-<h4 id="dane-do-przelewu-na-konto-naszej-drużyny">Dane do przelewu na konto naszej drużyny:</h4>
-<ul>
-  <li>Tutaj wpłacamy 100zł <br />
-Odbiorca: 25WDH SPARTANIE<br />
-Tytuł: Składka programowa Imię Nazwisko Obóz Strzeszyn 2023<br />
-Nr konta: 12 1020 1026 0000 1102 0542 8398<br />
-PKO BP<br /></li>
-</ul>
+            function enableMapsObserver() {
+              // Enable Observer on all Maps
+              var maps = document.getElementsByClassName('jekyll-map');
 
-<h3 id="zniżka-dla-rodzeństwa">Zniżka dla rodzeństwa:</h3>
-<p>Na obozie obowiązuje zniżka 25% na drugie dziecko w rodzinie.<br />
-Prosimy dokonać opłaty standardowej kwoty za pierwsze dziecko z
-tytułem przelewu podanym wyżej, oraz płatności za drugie dziecko w
-kwocie obniżonej (1050 zł) również z tym samym tytułem przelewu
-co podany wyżej (tylko z innymi danymi dziecka). Tej płatności
-proszę nie rozbijać już na raty.
-Bardzo ważne aby tytuł był wpisany dokładnie jak powyżej
-(imię i nazwisko dziecka) oraz taki sam przy obu ratach.</p>
+              const observer = new IntersectionObserver(function(entries, observer) {
+                // Test if one of the maps is in the viewport
+                var isIntersecting = typeof entries[0].isIntersecting === 'boolean' ? entries[0].isIntersecting : entries[0].intersectionRatio > 0;
+                if (isIntersecting) {
+                  lazyLoadGoogleMap();
+                  observer.disconnect();
+                }
+              });
 
-<h3 id="karty-obozowe">Karty obozowe:</h3>
-<p>Prosimy o przekazanie wypełnionych kart w ręce drużynowych do 25.05.2023. <br />
-Karta musi być wydrukowana obustronnie na jednej kartce. <br />
-Karta i zaliczka oddane i wpłacone w terminie są warunkiem przyjęcia na obóz. <br /></p>
+              for(var i = 0; i < maps.length; i++) {
+                observer.observe(maps[i]);
+              }
+            }
 
-<h3 id="faktura">Faktura</h3>
-<p>Potrzebę uzyskania faktury za wyjazd prosimy zgłaszać do końca czerwca
-(30.06.2023) wraz z danymi, jakie mają się znaleźć na fakturze,do
-drużynowego/drużynowej (dane podane w osobnym pliku).</p>
+            function lazyLoadGoogleMap() {
+                // If google maps api script not already loaded
+                if(!window.google || !window.google.maps) {
+                  var fjs = document.getElementsByTagName('script')[0];
+                  var js = document.createElement('script');
+                  js.id = 'gmap-api';
+                  js.setAttribute('async', '');
+                  js.setAttribute('defer', '');
+                  js.src = "//maps.google.com/maps/api/js?key=AIzaSyDwUqfZWf0XqX66_XMRn8veEV0zeyTdNiM&callback=jekyllMaps.initializeMap";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }
+            }
+          </script>
 
-<h3 id="czego-nie-brać-na-obóz">Czego nie brać na obóz:</h3>
-<ul>
-  <li>telefonów komórkowych (będzie możliwość skontaktowania się z
-córką/synem dzwoniąc do drużynowego/drużynowej)</li>
-  <li>mp3, urządzeń elektronicznych np. power banków, słuchawek itp.</li>
-  <li>ZA WSZELKIE WZIĘTE PRZEZ DZIECI RZECZY KADRA OBOZU NIE BIERZE
-ODPOWIEDZIALNOŚCI.</li>
-</ul>
+<script async defer src='https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js'
+        onload='jekyllMaps.initializeCluster({})'></script>
 
-<h3 id="co-należy-zabrać-ze-sobą">Co należy zabrać ze sobą:</h3>
-<h3 id="harcerz-wszystko-ma-spakowane-w-plecaku-niczego-nie-trzyma-w-rękach"><b><u>Harcerz wszystko ma spakowane w plecaku, niczego nie trzyma w rękach.</u></b></h3>
-<ul>
-  <li>pakujemy się w jeden duży plecak, nie walizkę, tak, aby wszystkie rzeczy były w środku lub przytroczone do plecaka. 
-Duży plecak jedzie osobnym transportem, do pociągu zabieramy drugi mały plecak:</li>
-  <li>WAŻNĄ LEGITYMACJĘ - koniecznie do małego plecaka</li>
-  <li>Mundur</li>
-  <li>harcerze: krótkie spodnie mundurowe oraz długie spodnie mundurowe w
-odpowiednim kolorze wg drużyny z paskiem, getry i wywijki, rogatywkę, buty trekkingowe ciemne bądź trapery, ciemny polar do
-munduru</li>
-  <li>latarka z zapasowymi bateriami</li>
-  <li>drobne pieniądze na własne wydatki na wędrówki</li>
-  <li>śpiwór i karimata, mała poduszka (np. nadmuchiwana - jest lekka i łatwo
-ją spakować)</li>
-  <li>piżama/dresy do spania</li>
-  <li>ciepła bluza/ sweter</li>
-  <li>nieprzemakalna kurtka oraz pałatka</li>
-  <li>nakrycie głowy (czapka z daszkiem,kapelusz,chustka)</li>
-  <li>spodnie, koszulki, bielizna (zapasowe długie skarpety)</li>
-  <li>strój kąpielowy</li>
-  <li>menażka, kubek i sztućce (prosimy by były oznaczone w trwały sposób)</li>
-  <li>mały plecak na wędrówki</li>
-  <li>klapki , dodatkowa para butów</li>
-  <li>kosmetyczka z wyposażeniem do mycia + ręcznik mały i duży</li>
-  <li>spray przeciw komarom i kleszczom</li>
-  <li>krem do opalania</li>
-  <li>poszewka na siennik (poszewka na słomę o wymiarach 80x180 cm)</li>
-  <li>proszek do prania</li>
-  <li>igła, nitka, zapasowe guziki do munduru, agrafka świeczki</li>
-  <li>śpiewniki</li>
-  <li>zeszyt w kratkę, rozpisany stopień, coś do pisania</li>
-  <li>finka, scyzoryk, zapałki (kilka paczek).</li>
-</ul>
-
-<h4 id="termin-pakowania-dużych-plecaków-zostanie-podany-przed-obozem-"><b><u>Termin pakowania dużych plecaków zostanie podany przed obozem. <br /></u></b></h4>
-<h4 id="-prosimy-podać-drużynowym-informację-o-przyjmowanych-przez-harcerzyharcerki-lekach-z-opisem-leków-i-opisem-dawkowania-"><b><u> Prosimy podać drużynowym informację o przyjmowanych przez harcerzy/harcerki lekach z opisem leków i opisem dawkowania. </u></b></h4>
-
-<h3 id="numery-kontaktowe-do-komendantów">Numery kontaktowe do komendantów:</h3>
-<p>Komendanci - preferowany kontakt mailowy</p>
-<ul>
-  <li>ks. Adam Kwaśniewski 669 367 390 adam.kwasniewski@zhr.pl 1-10.07.2023</li>
-  <li>Dominika Bigosińska 663 759 912 dominika.bigosinska@zhr.pl 10-16.07.2023</li>
-  <li>Bartłomiej Surowski 502 601 307 bartek.surowski@zhr.pl 17-21.07.2023</li>
-</ul>
-
-<h3 id="dokumenty-do-pobrania">DOKUMENTY DO POBRANIA:</h3>
-
-<h3 id="dane-do-faktury"><a href="https://25wdh.zhr.pl/pliki/danefaktura.docx">Dane do faktury</a></h3>
-<h3 id="karta-kwalifikacyjna">KARTA KWALIFIKACYJNA:</h3>
-<style> .pdf-embed-wrap-735a2189-66fd-465b-8a84-b7a5e83fc0a0 { display: flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-735a2189-66fd-465b-8a84-b7a5e83fc0a0 { height: 100%; } .pdf-embed-container-735a2189-66fd-465b-8a84-b7a5e83fc0a0 iframe { width: 100%; height: 100%; } </style>
-<div class="pdf-embed-wrap-735a2189-66fd-465b-8a84-b7a5e83fc0a0"> <div class="pdf-embed-container-735a2189-66fd-465b-8a84-b7a5e83fc0a0"> <iframe src="/pliki/kartaoboz.pdf" frameborder="0" allowfullscreen=""></iframe> </div> </div>]]></content><author><name>25wdhspartanie</name></author><category term="oboz" /><summary type="html"><![CDATA[Termin obozu: 1-21.07.2023 r.]]></summary></entry><entry><title type="html">Podwyżka składek członkowskich z 20zł na 27zł na 2023 r.</title><link href="25wdh.zhr.pl/informacje/Podwyzka-Skladek/" rel="alternate" type="text/html" title="Podwyżka składek członkowskich z 20zł na 27zł na 2023 r." /><published>2023-02-01T00:00:00+01:00</published><updated>2023-02-01T00:00:00+01:00</updated><id>25wdh.zhr.pl/informacje/Podwyzka-Skladek</id><content type="html" xml:base="25wdh.zhr.pl/informacje/Podwyzka-Skladek/"><![CDATA[<p>Czuwaj!</p>
-
-<p>W związku z nową wysokością składek w Okręgu Pomorskim ZHR od 1 stycznia 2023 r. jesteśmy zmuszeni podnieść składki z 20zł do 27zł.
-Na podwyżkę składki członkowskiej w znaczącym stopniu ma wpływ uchwała Rady Naczelnej, która zwiększyła część składki na funkcjonowanie Związku z 10 zł do 15 zł. Na podwyżkę przekładają się następujące czynniki:</p>
-<ul>
-  <li>kompensacja rosnących kosztów eksploatacyjnych siedziby Związku</li>
-  <li>wzrost budżetu Głównych Kwater OHy i OHek na działania programowe</li>
-  <li>dofinansowanie wydziałów Naczelnictwa np. Komunikacji czy “Matrix”</li>
-  <li>wyczekiwany przez instruktorów i instruktorki centralny program wsparcia psychologicznego, fundusz na obsługę prawną oraz fundraising na poziomie ZHR</li>
-  <li>Dwa ostatnie podpunkty warto rozpatrywać przez pryzmat przystąpienia do realizacji założeń Strategii ZHR 2025.</li>
-  <li>Ponadto ZO zwiększył część składki na funkcjonowanie Okręgu z 6 zł do 7 zł. Uzasadnieniem podwyżki jest konieczność kompensacji rosnących kosztów eksploatacyjnych siedziby okręgu oraz podwyżki płacy minimalnej w 2023 r.</li>
-  <li>Dodatkowo wzrósł koszt utrzymania naszej harcówki w Wejherowie</li>
-</ul>]]></content><author><name>25wdhspartanie</name></author><category term="informacje" /><summary type="html"><![CDATA[Czuwaj!]]></summary></entry><entry><title type="html">Zbiorki zastepow</title><link href="25wdh.zhr.pl/zbiorki/Zbiorki-Zastepow/" rel="alternate" type="text/html" title="Zbiorki zastepow" /><published>2022-10-08T00:00:00+02:00</published><updated>2022-10-08T00:00:00+02:00</updated><id>25wdh.zhr.pl/zbiorki/Zbiorki-Zastepow</id><content type="html" xml:base="25wdh.zhr.pl/zbiorki/Zbiorki-Zastepow/"><![CDATA[<p>Sobota czyli zbiórki zastępów. Orły i puchacze budują szałasy w lesie</p>
-
-<p><img src="/assets/images/zbiorka08_10_1.jpg" alt="sample image" />
-<img src="/assets/images/zbiorka08_10_2.jpg" alt="sample image" />
-<img src="/assets/images/zbiorka08_10_3.jpg" alt="sample image" />
-<img src="/assets/images/zbiorka08_10_4.jpg" alt="sample image" /></p>]]></content><author><name>25wdhspartanie</name></author><category term="zbiorki" /><summary type="html"><![CDATA[Sobota czyli zbiórki zastępów. Orły i puchacze budują szałasy w lesie]]></summary></entry><entry><title type="html">Po biwaku w Bieszkowicach</title><link href="25wdh.zhr.pl/biwaki/Po-Bieszkowice/" rel="alternate" type="text/html" title="Po biwaku w Bieszkowicach" /><published>2022-10-05T00:00:00+02:00</published><updated>2022-10-05T00:00:00+02:00</updated><id>25wdh.zhr.pl/biwaki/Po-Bieszkowice</id><content type="html" xml:base="25wdh.zhr.pl/biwaki/Po-Bieszkowice/"><![CDATA[<p>Zaczynamy nasz biwak w Bieszkowicach. Będzie to czas pełen wielu przygód. 
-Mamy nadzieję że wrócimy z niego z nowymi przyjaźniami i doświadczeniami. 
-Cieszymy się z osób które na biwaku są z nami po raz pierwszy.
-Za nami dzień pełen przygód. Rozpoczęliśmy go porannym rozruchem na łonie natury. 
-Na apelu rozkazem drużynowego podzastępowymi zostali mianowani młodzicy Wiktor Gafka, Szymon Winciorek i Szymon Kraszkiewicz. 
-Druhowie przed wami nowe wyzwania, powodzenia!
-Na zajęciach druhowie zmierzyli się z grą fabularną w której zdobywali informacje o przejeżdżającej karawanie handlarzy dzieł sztuki. 
-Po grze odbył się turniej łucznicy, odpowiednie miejsca zajęły zastępy:</p>
-<ol>
-  <li>Kruki</li>
-  <li>Puchacze</li>
-  <li>Orły
-Gratulujemy zwycięzcom!</li>
-</ol>
-
-<p><img src="/assets/images/bieszkowice1.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice2.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice3.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice4.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice5.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice6.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice7.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice8.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice9.jpg" alt="sample image" />
-<img src="/assets/images/bieszkowice10.jpg" alt="sample image" /></p>]]></content><author><name>25wdhspartanie</name></author><category term="biwaki" /><summary type="html"><![CDATA[Zaczynamy nasz biwak w Bieszkowicach. Będzie to czas pełen wielu przygód. Mamy nadzieję że wrócimy z niego z nowymi przyjaźniami i doświadczeniami. Cieszymy się z osób które na biwaku są z nami po raz pierwszy. Za nami dzień pełen przygód. Rozpoczęliśmy go porannym rozruchem na łonie natury. Na apelu rozkazem drużynowego podzastępowymi zostali mianowani młodzicy Wiktor Gafka, Szymon Winciorek i Szymon Kraszkiewicz. Druhowie przed wami nowe wyzwania, powodzenia! Na zajęciach druhowie zmierzyli się z grą fabularną w której zdobywali informacje o przejeżdżającej karawanie handlarzy dzieł sztuki. Po grze odbył się turniej łucznicy, odpowiednie miejsca zajęły zastępy: Kruki Puchacze Orły Gratulujemy zwycięzcom!]]></summary></entry><entry><title type="html">Akcja naborowa Festyn w Konwikcie</title><link href="25wdh.zhr.pl/zbiorki/Akcja-Naborowa-Festyn/" rel="alternate" type="text/html" title="Akcja naborowa Festyn w Konwikcie" /><published>2022-08-28T00:00:00+02:00</published><updated>2022-08-28T00:00:00+02:00</updated><id>25wdh.zhr.pl/zbiorki/Akcja-Naborowa-Festyn</id><content type="html" xml:base="25wdh.zhr.pl/zbiorki/Akcja-Naborowa-Festyn/"><![CDATA[<h3 id="wzięliśmy-udział-w-festynie-parafialnym-zorganizowanym-w-ogrodach-konwiktu">Wzięliśmy udział w festynie parafialnym zorganizowanym w ogrodach konwiktu.</h3>
-
-<p><img src="/assets/images/festynKonwikt.jpg" alt="sample image" /></p>]]></content><author><name>25wdhspartanie</name></author><category term="zbiorki" /><summary type="html"><![CDATA[Wzięliśmy udział w festynie parafialnym zorganizowanym w ogrodach konwiktu.]]></summary></entry><entry><title type="html">Biwak Bieszkowice Informacje 23.09 - 25.09</title><link href="25wdh.zhr.pl/biwaki/Biwak-Bieszkowice/" rel="alternate" type="text/html" title="Biwak Bieszkowice Informacje 23.09 - 25.09" /><published>2022-08-28T00:00:00+02:00</published><updated>2022-08-28T00:00:00+02:00</updated><id>25wdh.zhr.pl/biwaki/Biwak-Bieszkowice</id><content type="html" xml:base="25wdh.zhr.pl/biwaki/Biwak-Bieszkowice/"><![CDATA[<ul>
-  <li>Biblioteka i Centrum Kultury, ul.Szkolna 4, 84-206 Bieszkowice</li>
-  <li>Koszt 100zł, proszę zabrać w gotówce na biwak.</li>
-  <li>Dojazd i powrót we własnym zakresie</li>
-  <li>Przyjazd 23.09 19:00</li>
-  <li>Powrót 25.09 13:00</li>
-  <li>Karta do wypełnienia, zabieramy na biwak : <a href="https://drive.google.com/file/d/1iMbI7Pokb_CPN3tbemO0Aaf74HVFcgbJ/view?usp=sharing">KARTA</a></li>
-</ul>
-
-<p>Ekwipunek:</p>
-<ul>
-  <li>zabieramy ubrania dostosowane do jesiennych warunków</li>
-  <li>śpiwór</li>
-  <li>karimata</li>
-  <li>mała poduszka (dla chętnych)</li>
-  <li>kurtka przeciwdeszczowa</li>
-  <li>ciepła bluza</li>
-  <li>ciepłe okrycie głowy</li>
-  <li>koszulki na zmianę</li>
-  <li>długie spodnie</li>
-  <li>bielizna na zmianę, skarpetki</li>
-  <li>buty zmienne/sportowe</li>
-  <li>klapki</li>
-  <li>piżama</li>
-  <li>menażka, sztućce, kubek</li>
-  <li>przybory do mycia</li>
-  <li>mundur</li>
-  <li>podbita legitymacja</li>
-  <li>latarka</li>
-  <li>notes, pisadło</li>
-  <li>przybory do szycia oraz zapałki</li>
-  <li>mały plecak</li>
-  <li>NIE bierzemy zbędnych sprzętów elektronicznych
-    <h3 id="harcerz-wszystko-ma-spakowane-w-plecaku-niczego-nie-trzyma-w-rękach">Harcerz wszystko ma spakowane w plecaku, niczego nie trzyma w rękach.</h3>
-  </li>
-</ul>]]></content><author><name>25wdhspartanie</name></author><category term="biwaki" /><summary type="html"><![CDATA[Biblioteka i Centrum Kultury, ul.Szkolna 4, 84-206 Bieszkowice Koszt 100zł, proszę zabrać w gotówce na biwak. Dojazd i powrót we własnym zakresie Przyjazd 23.09 19:00 Powrót 25.09 13:00 Karta do wypełnienia, zabieramy na biwak : KARTA]]></summary></entry></feed>
+</body>
+</html>

@@ -4,7 +4,8 @@ title: Umundurowanie 25WDH "SPARTANIE"
 permalink: /umundurowanie/
 ---
 <ul>
-	<li>Podane powyżej linki nie są obligatoryjne- elementy umundurowania jak najbardziej można kupować w innych miejscach&nbsp;</li>
+	<li>Najbliższy Sklep Harcerski: "Druhna", 10 Lutego 23, 81-364 Gdynia <a href="https://www.facebook.com/s.h.druhna/">Strona sklepu</a> &nbsp;</li>
+	<li>Podane poniżej linki nie są obligatoryjne- elementy umundurowania jak najbardziej można kupować w innych miejscach&nbsp;</li>
 	<li>Wszystkie elementy umundurowania powinny być&nbsp;<strong>dopasowane kolorystycznie</strong>&nbsp;do bluzy mundurowej</li>
 	<li><strong>Rogatywka</strong>&nbsp;&ndash; Można kupić dowolny model- byle&nbsp;<strong>kolorystycznie pasował</strong>&nbsp;do bluzy mundurowej. Prosimy nie kupować lilijki- harcerz otrzyma ją od drużynowego w momencie składania przyrzeczenia</li>
 	<li><strong>Bluza mundurowa</strong>&nbsp;&ndash; Bluza koniecznie musi być&nbsp;<strong>Bluzą mundurową ZHR</strong>. Jest to wymagane, aby drużyna wyglądała jednolicie i dobrze się prezentowała. Zalecamy kupić większy rozmiar &ndash; harcerz i tak do niej podrośnie, a nie trzeba będzie ponownie wydawać pieniędzy&nbsp;</li>

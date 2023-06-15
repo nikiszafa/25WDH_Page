@@ -11,3 +11,12 @@ permalink: /kontakt/
 #### PKO BP
 ***
 ### Wysokość składki miesięcznej wynosi 27zł
+***
+### Harcówka
+### 84-200 Wejherowo, ul. Strzelecka 7
+
+{% google_map
+   zoom="15"
+   latitude="54.600052"
+   longitude="18.231408"
+   marker_title="Harcówka!" %}

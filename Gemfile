@@ -9,4 +9,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem "jekyll-pdf-embed"
+  gem 'jekyll-maps'
+  gem "jekyll-leaflet"
 end
