@@ -330,13 +330,13 @@ if (typeof Object.assign !== 'function') {
 }
 
 </script>
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="25wdh.zhr.pl/feed.xml" rel="self" type="application/atom+xml" /><link href="25wdh.zhr.pl/" rel="alternate" type="text/html" /><updated>2023-06-16T00:23:03+02:00</updated><id>25wdh.zhr.pl/feed.xml</id><title type="html">25 WDH SPARTANIE</title><subtitle>Strona 25 Wejherowskiej Drużyny Harcerzy &quot;Spartanie&quot; im. hm. Pawła Szefki należącej do Związku Harcerstwa Rzeczypospolitej.</subtitle><author><name>25wdhspartanie</name></author><entry><title type="html">Informator obozowy część druga</title><link href="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/" rel="alternate" type="text/html" title="Informator obozowy część druga" /><published>2023-06-15T00:00:00+02:00</published><updated>2023-06-15T00:00:00+02:00</updated><id>25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga</id><content type="html" xml:base="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/"><![CDATA[<p>Szanowni Państwo!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="25wdh.zhr.pl/feed.xml" rel="self" type="application/atom+xml" /><link href="25wdh.zhr.pl/" rel="alternate" type="text/html" /><updated>2023-06-16T00:34:44+02:00</updated><id>25wdh.zhr.pl/feed.xml</id><title type="html">25 WDH SPARTANIE</title><subtitle>Strona 25 Wejherowskiej Drużyny Harcerzy &quot;Spartanie&quot; im. hm. Pawła Szefki należącej do Związku Harcerstwa Rzeczypospolitej.</subtitle><author><name>25wdhspartanie</name></author><entry><title type="html">Informator obozowy część druga</title><link href="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/" rel="alternate" type="text/html" title="Informator obozowy część druga" /><published>2023-06-15T00:00:00+02:00</published><updated>2023-06-15T00:00:00+02:00</updated><id>25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga</id><content type="html" xml:base="25wdh.zhr.pl/oboz/Informator-Obozowy-Czesc-Druga/"><![CDATA[<p>Szanowni Państwo!</p>
 
 <p>Proszę się zapoznać z informacjami:</p>
 
 <h2> Teren naszego zgrupowania: </h2>
 
-<div id="leaflet-map-5a4eb477934054fa28f97da7b67b5a68" class="leaflet-map"></div>
+<div id="leaflet-map-837d31ba9c15bdcfab0a2ee5faeb5511" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -346,13 +346,13 @@ if (typeof Object.assign !== 'function') {
     var tagInputArg = {"center" : [53.605590, 16.410628],
                 "zoom" : 13 } ;
     var blockLeafletItems = [
-    {id: "15642036274ce5c032220417644ea65a",
+    {id: "84cd47495160b33dbc1bd3546437ad7f",
               type: "LeafletGeoJSON",
               value: "/assets/routes/strzeszynZgrupowanie.geojson" },
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-5a4eb477934054fa28f97da7b67b5a68";
+    var defaultMapElId = "leaflet-map-837d31ba9c15bdcfab0a2ee5faeb5511";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -485,7 +485,7 @@ if (typeof Object.assign !== 'function') {
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 5a4eb477934054fa28f97da7b67b5a68 with these args:");
+        console.log("Creating map 837d31ba9c15bdcfab0a2ee5faeb5511 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1400,7 +1400,7 @@ if (typeof Object.assign !== 'function') {
 <br />
 <p>Trasa z dworca na miejsce obozowe:</p>
 </b>
-<div id="leaflet-map-310bf92eb58bf1957976b0ad818c4ae2" class="leaflet-map"></div>
+<div id="leaflet-map-8ca328f42c51ead72d28fd560a10703a" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -1410,13 +1410,13 @@ if (typeof Object.assign !== 'function') {
     var tagInputArg = {"center" : [53.594104, 16.403750],
                 "zoom" : 13 } ;
     var blockLeafletItems = [
-    {id: "2bf04ddd5c32847abb24dc99b432c1cc",
+    {id: "adfb3033f3b4b3b0ea1137ca08917e21",
               type: "LeafletGeoJSON",
               value: "/assets/routes/lubowo_strzeszyn.geojson" },
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-310bf92eb58bf1957976b0ad818c4ae2";
+    var defaultMapElId = "leaflet-map-8ca328f42c51ead72d28fd560a10703a";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -1549,7 +1549,7 @@ if (typeof Object.assign !== 'function') {
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 310bf92eb58bf1957976b0ad818c4ae2 with these args:");
+        console.log("Creating map 8ca328f42c51ead72d28fd560a10703a with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -2463,10 +2463,10 @@ if (typeof Object.assign !== 'function') {
 Dzień przed wyjazdem 30.06 w godzinach 16-18 proszę przynieść duże plecaki, które pojadą autem na ul. Sobieskiego 334.
 </h4>
 
-<div id="45167117-84ae-4d5d-aa35-1fcb91b46bd0" style="width:600px;height:400px;" class=" jekyll-map"></div>
+<div id="8fe6a545-c5a4-408d-975a-5a184bd01a39" style="width:600px;height:400px;" class=" jekyll-map"></div>
 <script type="text/javascript">
   jekyllMaps.register(
-    '45167117-84ae-4d5d-aa35-1fcb91b46bd0',
+    '8fe6a545-c5a4-408d-975a-5a184bd01a39',
     [{"latitude":"54.603523","longitude":"18.225280","title":"Sobieskiego 334!","icon":null,"url":"/oboz/Informator-Obozowy-Czesc-Druga/","image":"","popup_html":""}],
     {"baseUrl":"","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"styles":"[]","customZoom":15}
   );
@@ -2661,8 +2661,8 @@ ją spakować)</li>
 
 <h3 id="dane-do-faktury"><a href="https://25wdh.zhr.pl/pliki/danefaktura.docx">Dane do faktury</a></h3>
 <h3 id="karta-kwalifikacyjna">KARTA KWALIFIKACYJNA:</h3>
-<style> .pdf-embed-wrap-735a2189-66fd-465b-8a84-b7a5e83fc0a0 { display: flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-735a2189-66fd-465b-8a84-b7a5e83fc0a0 { height: 100%; } .pdf-embed-container-735a2189-66fd-465b-8a84-b7a5e83fc0a0 iframe { width: 100%; height: 100%; } </style>
-<div class="pdf-embed-wrap-735a2189-66fd-465b-8a84-b7a5e83fc0a0"> <div class="pdf-embed-container-735a2189-66fd-465b-8a84-b7a5e83fc0a0"> <iframe src="/pliki/kartaoboz.pdf" frameborder="0" allowfullscreen=""></iframe> </div> </div>]]></content><author><name>25wdhspartanie</name></author><category term="oboz" /><summary type="html"><![CDATA[Termin obozu: 1-21.07.2023 r.]]></summary></entry><entry><title type="html">Podwyżka składek członkowskich z 20zł na 27zł na 2023 r.</title><link href="25wdh.zhr.pl/informacje/Podwyzka-Skladek/" rel="alternate" type="text/html" title="Podwyżka składek członkowskich z 20zł na 27zł na 2023 r." /><published>2023-02-01T00:00:00+01:00</published><updated>2023-02-01T00:00:00+01:00</updated><id>25wdh.zhr.pl/informacje/Podwyzka-Skladek</id><content type="html" xml:base="25wdh.zhr.pl/informacje/Podwyzka-Skladek/"><![CDATA[<p>Czuwaj!</p>
+<style> .pdf-embed-wrap-e8bc1995-56cd-48e9-af0d-6ff2c012c399 { display: flex; flex-direction: column; width: 100%; height: 650px; } .pdf-embed-container-e8bc1995-56cd-48e9-af0d-6ff2c012c399 { height: 100%; } .pdf-embed-container-e8bc1995-56cd-48e9-af0d-6ff2c012c399 iframe { width: 100%; height: 100%; } </style>
+<div class="pdf-embed-wrap-e8bc1995-56cd-48e9-af0d-6ff2c012c399"> <div class="pdf-embed-container-e8bc1995-56cd-48e9-af0d-6ff2c012c399"> <iframe src="/pliki/kartaoboz.pdf" frameborder="0" allowfullscreen=""></iframe> </div> </div>]]></content><author><name>25wdhspartanie</name></author><category term="oboz" /><summary type="html"><![CDATA[Termin obozu: 1-21.07.2023 r.]]></summary></entry><entry><title type="html">Podwyżka składek członkowskich z 20zł na 27zł na 2023 r.</title><link href="25wdh.zhr.pl/informacje/Podwyzka-Skladek/" rel="alternate" type="text/html" title="Podwyżka składek członkowskich z 20zł na 27zł na 2023 r." /><published>2023-02-01T00:00:00+01:00</published><updated>2023-02-01T00:00:00+01:00</updated><id>25wdh.zhr.pl/informacje/Podwyzka-Skladek</id><content type="html" xml:base="25wdh.zhr.pl/informacje/Podwyzka-Skladek/"><![CDATA[<p>Czuwaj!</p>
 
 <p>W związku z nową wysokością składek w Okręgu Pomorskim ZHR od 1 stycznia 2023 r. jesteśmy zmuszeni podnieść składki z 20zł do 27zł.
 Na podwyżkę składki członkowskiej w znaczącym stopniu ma wpływ uchwała Rady Naczelnej, która zwiększyła część składki na funkcjonowanie Związku z 10 zł do 15 zł. Na podwyżkę przekładają się następujące czynniki:</p>
