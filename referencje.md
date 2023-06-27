@@ -8,7 +8,8 @@ permalink: /referencje/
 Jesteśmy dumni z naszych ostatnich osiągnięć:
 <em>
 <ul>
-<li>Miano „Drużyny Rzeczypospolitej „Organizacji Harcerzy Związku Harcerstwa 
+<li>Nagroda "Róża Północy" II edycja 2023, przyznawana najbardziej wyróżniającym się organizacjom pozarządowym w powiecie wejherowskim.</li>
+<li>Miano "Drużyny Rzeczypospolitej Organizacji Harcerzy Związku Harcerstwa"
 Rzeczypospolitej, czyli najlepszej drużyny organizacji. </li>
 <li>Uczestnictwo w ramach Kontyngentu Harcerskiego Ochotniczego Pogotowia 
 Ratunkowego podczas Światowych Dni Młodzieży w Panamie. </li>
@@ -25,13 +26,26 @@ rzecz ofiar Wojny na Ukrainie.</li>
     <div class="col-sm-6">
         <div class="card">
         <div class="card-body">
+            <h5 class="card-title">Nagroda "Róża Północy" II edycja 2023</h5>
+            <p class="card-text">Nagorda przyznawana najbardziej wyróżniającym się organizacjom pozarządowym w powiecie wejherowskim.</p>
+            <p class="card-text"><small class="text-muted">Wejherowo, 18.06.2023</small></p>
+        </div>
+        <img src="{{site.baseurl}}/assets/images/referencje/rozaDyplom.png" class="card-img-top" alt="...">
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+        <div class="card-body">
             <h5 class="card-title">Parafia św. Leona Wielkiego w Wejherowie</h5>
             <p class="card-text">Współpracujemy z lokalną parafią na rzecz wspólnego dobra.</p>
             <p class="card-text"><small class="text-muted">Wejherowo, 06.06.2023</small></p>
         </div>
-        <img src="{{site.baseurl}}/assets/images/REF_LEON.jpg" class="card-img-top" alt="...">
+        <img src="{{site.baseurl}}/assets/images/referencje/REF_LEON.jpg" class="card-img-top" alt="...">
         </div>
     </div>
+<div>
+
+<div class="row">
     <div class="col-sm-6">
         <div class="card">
         <div class="card-body">
@@ -39,7 +53,8 @@ rzecz ofiar Wojny na Ukrainie.</li>
             <p class="card-text">Pamiątka po wspólnym obozowaniu</p>
             <p class="card-text"><small class="text-muted">Obóz harcerski</small></p>
         </div>
-        <img src="{{site.baseurl}}/assets/images/REF_14BDH.jpg" class="card-img-top" alt="...">
+        <img src="{{site.baseurl}}/assets/images/referencje/REF_14BDH.jpg" class="card-img-top" alt="...">
         </div>
     </div>
+
 <div>

@@ -11,10 +11,8 @@ Proszę się zapoznać z informacjami:
 
 <h2> Teren naszego zgrupowania: </h2>
 
-{% leaflet_map {"center" : [53.605590, 16.410628],
-                "zoom" : 13 } %}
-    {% leaflet_geojson "/assets/routes/strzeszynZgrupowanie.geojson" %}
-{% endleaflet_map %}
+<iframe src="/assets/routes/zgrupowanieStrzeszyn.html" height="600px" width="100%" style="border:none;"></iframe>
+
 
 <h2> 1. TRANSPORT </h2>
 
@@ -28,11 +26,11 @@ Proszę się zapoznać z informacjami:
   
 <br>
 <p>Trasa z dworca na miejsce obozowe:</p>
+
+<iframe src="/assets/routes/lubowo_strzeszyn.html" height="600px" width="100%" style="border:none;"></iframe>
+
 </b>
-{% leaflet_map {"center" : [53.594104, 16.403750],
-                "zoom" : 13 } %}
-    {% leaflet_geojson "/assets/routes/lubowo_strzeszyn.geojson" %}
-{% endleaflet_map %}
+
 
 </div>
 

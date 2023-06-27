@@ -1,0 +1,38 @@
+
+```{r include = FALSE}
+library(leaflet)
+library(dplyr)
+library(htmlwidgets)
+library(rgdal)
+library(geojsonio)
+library(sf)
+library(mapview)
+library(XML)
+library(plotKML)
+
+
+
+```
+
+
+```{r}
+gpx_data <- readOGR(dsn = "C:/Users/nikodemwrosz/Desktop/priv/harc/brutalist-blog/25WDH_Page/assets/routes/lubowo_strzeszyn.gpx", layer = "tracks")
+
+GPX_file <- "C:/Users/nikodemwrosz/Desktop/priv/harc/brutalist-blog/25WDH_Page/assets/routes/lubowo_strzeszyn.gpx"
+
+track <- readOGR(GPX_file, layer = "tracks", verbose = FALSE)
+
+map <- leaflet() %>% addTiles() %>% addPolylines(data=track, color = "red") %>%
+addProviderTiles("Thunderforest.Landscape", group = "Topographical") %>%
+addProviderTiles("OpenStreetMap.Mapnik", group = "Road map") %>%
+addProviderTiles("Esri.WorldImagery", group = "Satellite") %>%
+addLayersControl(position = 'topright',
+    baseGroups = c("Topographical", "Road map", "Satellite"),
+    options = layersControlOptions(collapsed = FALSE))
+
+map
+
+saveWidget(widget = map,file = 'C:/Users/nikodemwrosz/Desktop/priv/harc/brutalist-blog/25WDH_Page/assets/routes/lubowo_strzeszyn.html')
+
+
+```

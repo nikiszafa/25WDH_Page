@@ -1,0 +1,22 @@
+
+```{r include = FALSE}
+library(leaflet)
+library(dplyr)
+library(htmlwidgets)
+library(rgdal)
+
+```
+
+
+```{r}
+url <- "https://25wdh.zhr.pl/assets/routes/strzeszynZgrupowanie.geojson"
+geojson <- jsonlite::fromJSON(url)
+res <- readOGR("https://25wdh.zhr.pl/assets/routes/strzeszynZgrupowanie.geojson")
+
+leaflet() %>%
+  addTiles() %>%
+  setView(lat=53.606389, lng=16.410493,zoom = 15) %>%
+  addMarkers(lat=53.606389, lng=16.410493, popup="Miejsce obozowe") %>%
+  addPolygons(data = res) %>%
+  saveWidget(here::here('C:/Users/nikodemwrosz/Desktop/priv/harc/brutalist-blog/25WDH_Page/assets/routes','zgrupowanieStrzeszyn.html'))
+```

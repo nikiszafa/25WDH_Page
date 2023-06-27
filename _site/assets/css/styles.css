@@ -2578,4 +2578,6 @@ pre.highlight { padding: 1rem; }
 
 @media (prefers-color-scheme: dark) { .footer-icon-links { text-decoration: none; color: #e1e1e1; } .footer-icon-links:hover, .footer-icon-links:focus { text-decoration: none; color: #e1e1e1; } .archive-title { color: #e1e1e1; } .light-avatar { display: none !important; } .dark-avatar { display: inline-block !important; } }
 
+div.leaflet-map { z-index: 0; }
+
 /*# sourceMappingURL=styles.css.map */
